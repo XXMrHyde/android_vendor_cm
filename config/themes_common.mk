@@ -3,7 +3,6 @@ PRODUCT_PACKAGES += \
        ThemeManager \
        ThemeChooser \
        com.tmobile.themes \
-       CMFileManagerThemes \
 	   AlphaBlueModV2 \
        AlphaBlueModV2Light
 
