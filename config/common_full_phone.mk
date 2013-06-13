@@ -3,7 +3,7 @@ $(call inherit-product, vendor/cm/config/common_full.mk)
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
-     ro.config.ringtone=Playa.ogg \
+    ro.config.ringtone=Playa.ogg \
     ro.config.notification_sound=Regulus.ogg \
     ro.config.alarm_alert=Alarm_Beep.ogg
 
