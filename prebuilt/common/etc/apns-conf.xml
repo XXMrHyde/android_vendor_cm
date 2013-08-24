@@ -328,7 +328,7 @@
   <apn carrier="Tele2 MMS LT" mcc="246" mnc="03" apn="mms.tele2.lt" mmsc="http://mmsc.tele2.lt/" mmsproxy="193.012.040.029" mmsport="8080" type="mms" />
   <apn carrier="Tele2 LT MMS" mcc="246" mnc="03" apn="wap.tele2.lt" mmsc="http://mmsc.tele2.lt" mmsproxy="193.12.40.29" mmsport="8080" type="mms" />
   <apn carrier="LMT" mcc="247" mnc="01" apn="internet.lmt.lv" type="default,supl" />
-  <apn carrier="LMT MMS" mcc="247" mnc="01" apn="mms.lmt.lv" mmsproxy="212.93.97.201" type="mms" />
+  <apn carrier="LMT MMS" mcc="247" mnc="01" apn="mms.lmt.lv" mmsc="http://mmsc.lmt.lv/mmsc" mmsproxy="212.93.97.201" mmsport="8080" type="mms" />
   <apn carrier="Tele2 Internet LV" mcc="247" mnc="02" apn="internet.tele2.lv" user="wap" password="wap" proxy="" port="8080" type="default,supl" />
   <apn carrier="Tele2 MMS LV" mcc="247" mnc="02" apn="mms.tele2.lv" user="wap" password="wap" mmsc="http://mmsc.tele2.lv/" mmsproxy="193.012.040.038" mmsport="8080" type="mms" />
   <apn carrier="Bite LV Internet" mcc="247" mnc="05" apn="internet" type="default,supl" />
@@ -1420,6 +1420,8 @@
   <apn carrier="Viva MMS" mcc="736" mnc="01" apn="mms.nuevatel.com" server="mmsgw.nuevatel.com:1981" mmsc="http://mmsgw.nuevatel.com:1981" mmsproxy="192.168.101.4" mmsport="3128" type="mms" />
   <apn carrier="Movistar EC" mcc="740" mnc="00" apn="internet.movistar.com.ec" type="default,supl" />
   <apn carrier="Porta EC" mcc="740" mnc="010" apn="internet.porta.com.ec" type="default,supl" />
+  <apn carrier="Internet Personal" mcc="744" mnc="05" apn="internet" type="default,supl" />
+  <apn carrier="MMS Personal" mcc="744" mnc="05" apn="mms" mmsc="http://mms.personal.com.py" mmsproxy="172.16.192.7" mmsport="8080" type="mms" />
   <apn carrier="Ancel" mcc="748" mnc="01" apn="ancel" type="default,supl" />
   <apn carrier="Ancel MMS" mcc="748" mnc="01" apn="mms" mmsc="http://mmsc.mms.ancelutil.com.uy" mmsproxy="200.40.246.2" mmsport="3128" type="mms" />
   <apn carrier="Antel" mcc="748" mnc="01" apn="wap" proxy="200.40.246.2" port="3128" server="www.dale.com.uy" mmsc="http://mmsc.mms.ancelutil.com.uy" mmsproxy="200.40.246.2" mmspor="3128" type="default,supl,mms" />
