@@ -70,6 +70,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.root_access=1
     ro.build.selinux=1
 
 # Disable excessive dalvik debug messages
@@ -116,6 +117,11 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/cm/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
 
+# Terminal Emulator
+PRODUCT_COPY_FILES +=  \
+    vendor/cm/proprietary/Term.apk:system/app/Term.apk \
+    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
+
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
     vendor/cm/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
@@ -144,7 +150,9 @@ include vendor/cm/config/themes_common.mk
 PRODUCT_PACKAGES += \
     Development \
     LatinIME \
-    BluetoothExt
+    Superuser \
+    BluetoothExt \
+    su
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
@@ -211,31 +219,6 @@ PRODUCT_PACKAGES += \
 # rsync
 PRODUCT_PACKAGES += \
     rsync
-
-# These packages are excluded from user builds
-ifneq ($(TARGET_BUILD_VARIANT),user)
-
-PRODUCT_PACKAGES += \
-    CMUpdater \
-    Superuser \
-    su
-
-# Terminal Emulator
-PRODUCT_COPY_FILES +=  \
-    vendor/cm/proprietary/Term.apk:system/app/Term.apk \
-    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=1
-else
-
-PRODUCT_PACKAGES += \
-    CMFota
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=0
-
-endif
 
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
