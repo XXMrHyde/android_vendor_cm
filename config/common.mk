@@ -138,6 +138,10 @@ PRODUCT_COPY_FILES += \
 # T-Mobile theme engine
 include vendor/cm/config/themes_common.mk
 
+# DashClock
+PRODUCT_PACKAGES += \
+    DashClock
+
 # Required CM packages
 PRODUCT_PACKAGES += \
     Development \
